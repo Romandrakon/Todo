@@ -1,8 +1,18 @@
 .input-field {
-    padding: 5px 0 5px 5px;
+    padding: 10px 0 10px 5px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.input-field:focus {
+    border: 1px solid rgb(53, 53, 252);
 }
 
 .wrapper {
+    padding: 50px 0;
     display: block;
     text-align: center;
     width: 50%;
@@ -12,6 +22,10 @@
 .main-content {
     display: flex;
     justify-content: center;
+}
+
+.product-form {
+    padding: 0px 25px;
 }
 
 .basket-list  {
@@ -26,7 +40,6 @@
 
 .basket-list > li {
     margin: 10px 0;
-    background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 0 5px black;
     padding: 10px;
@@ -36,3 +49,62 @@
     box-sizing: border-box;
 }
 
+.btn-add {
+    border: 1px solid rgb(29, 143, 250);
+    background-color: #fff;
+    position: relative;
+}
+
+.delete-item, .clear-all {
+    position: relative;
+    border: 1px solid rgb(255, 86, 86);
+    background-color: #fff;
+    color:rgb(0, 0, 0);
+}
+
+.delete-item:hover, .clear-all:hover {
+background-color: rgb(255, 86, 86);
+color:#fff;
+}
+
+.btn {
+    position: relative;
+    padding: 10px 35px;
+    border-radius: 5px;
+}
+
+.svg-container {
+    position: absolute;
+    left: 3px;
+    top: calc(50% - 0.7em);
+}
+    
+.btn-add:hover, .success:hover,.delete-item:hover, .clear-all:hover > .svg-container {
+    fill: white;
+    stroke: white;
+}
+
+
+.con {
+    background-color: rgb(8, 199, 88);
+}
+
+.success {
+    background-color: #fff;
+    border:1px solid rgb(8, 199, 88)
+}
+
+.success:hover {
+    background-color: rgb(8, 199, 88);
+    color:#fff;
+}
+
+.btn-add:hover {
+    color:#fff;
+    background-color: rgb(29, 143, 250);
+}
+
+.done {
+    background-color: rgb(8, 199, 88);
+    color:#fff;
+}
